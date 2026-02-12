@@ -21,6 +21,7 @@ import AdminGallery from "./pages/admin/AdminGallery";
 import AdminResearch from "./pages/admin/AdminResearch";
 import AdminOrganizations from "./pages/admin/AdminOrganizations";
 import AdminExtensions from "./pages/admin/AdminExtensions";
+import AdminUsers from "./pages/admin/AdminUsers";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -49,6 +50,7 @@ const AppContent = () => {
           <Route path="research" element={<AdminResearch />} />
           <Route path="organizations" element={<AdminOrganizations />} />
           <Route path="extensions" element={<AdminExtensions />} />
+          <Route path="users" element={<AdminUsers />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

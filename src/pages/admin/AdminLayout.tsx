@@ -1,6 +1,6 @@
 import { Navigate, Outlet, Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import { LayoutDashboard, Megaphone, Image, BookOpen, Users, Globe, LogOut } from "lucide-react";
+import { LayoutDashboard, Megaphone, Image, BookOpen, Users, Globe, LogOut, Shield } from "lucide-react";
 
 const sidebarLinks = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/admin" },
@@ -9,6 +9,7 @@ const sidebarLinks = [
   { icon: BookOpen, label: "Research", path: "/admin/research" },
   { icon: Users, label: "Organizations", path: "/admin/organizations" },
   { icon: Globe, label: "Extensions", path: "/admin/extensions" },
+  { icon: Shield, label: "Users", path: "/admin/users" },
 ];
 
 const AdminLayout = () => {
